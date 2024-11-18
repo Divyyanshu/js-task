@@ -1,60 +1,17 @@
-// question 1. map method
-const maparray = ["ram", "shyam", "mayank", "divyanshu"];
+// Task 8: Identify and Split an Array
+// 1. Create an array of scores (both high and low values).
+// 2. Use findIndex to locate the first score over 80.
+// 3. Use slice to separate scores before and after this index.
 
-const mapOutput = maparray.map((item) => {
-    return item = item + " tailor"
-})
 
-console.log(mapOutput)
+let scores = [45, 67, 80, 89, 23, 92, 74, 88, 55];
 
-// 2. filter method
+let firstHighscoreIndex = scores.findIndex(score => score > 80)
+console.log(firstHighscoreIndex)
 
-const SchoolData = [
-    {
-        "StudentName": "Divyanshu tailor",
-        "marks": 350,
-        "class": 12,
-        "subjects ": "pcm",
-    },
-    {
-        "StudentName": "Divyanshu tailor",
-        "marks": 460,
-        "class": 12,
-        "subjects ": "pcm",
-    },
-    {
-        "StudentName": "Divyanshu tailor",
-        "marks": 520,
-        "class": 10,
-        "subjects ": "pcm",
-    },
-    {
-        "StudentName": "Divyanshu tailor",
-        "marks": 390,
-        "class": 12,
-        "subjects ": "pcm",
-    },
-    {
-        "StudentName": "Divyanshu tailor",
-        "marks": 410,
-        "class": 12,
-        "subjects ": "pcm",
-    },
-    {
-        "StudentName": "Divyanshu tailor",
-        "marks": 450,
-        "class": 12,
-        "subjects ": "pcm",
-    }
-]
+let highScores = scores.slice(0, firstHighscoreIndex)
+console.log(highScores)
+let lowScores = scores.slice(firstHighscoreIndex)
+console.log(lowScores)
 
-const filterOutput = SchoolData.filter((item) => {
-    return item = item.marks > 400
-})
-console.log(filterOutput)
-
-const totalMarks = filterOutput.reduce((acc, current) => {
-    return current.marks + acc
-}, 0)
-
-console.log(totalMarks)
+console.log(scores)

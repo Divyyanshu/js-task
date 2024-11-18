@@ -1,0 +1,116 @@
+// Task 1: Add and Remove Elements Conditionally
+// 1. Create an array of your favorite movies.
+// 2. Add a new movie only if it doesn’t already exist in the array.
+// 3. Remove the last movie if the array length exceeds 5.
+
+
+let favMovies = ["ddlj", "kick", "spiderman", "msdhoni", "stree"];
+
+// addition movie 
+function addmovie(movie) {
+    if (!favMovies.includes(movie)) {
+        favMovies.push(movie);
+        console.log(`${movie} this movie has been added in the list`)
+    } else {
+        console.log(`${movie} this movie is already in the list`)
+    }
+    // removal movie
+    if (favMovies.length > 5) {
+        const removeMovie = favMovies.pop(movie)
+        console.log(`${removeMovie} this movie is removed in the list for exceed the list size by 6`)
+    }
+}
+
+
+addmovie("spiderman");
+console.log(favMovies)
+-----------------------------------------------------------------------
+// Task 2: Find and Add Elements Based on Index
+// 1. Create an array of different fruit names.
+// 2. Find the index of a specific fruit (e.g., "apple") using findIndex.
+// 3. If it exists, add a new fruit right before it using splice. If it doesn’t, add it to the start
+// using unshift.
+
+let fruits = ["mango", "banana", "orange", "watermallon", "gavava"];
+
+
+// find the index of specific fruit 
+
+function addFruitsBefore(targetFruit , newFruit){
+const index = fruits.findIndex(fruit=>fruit === targetFruit)
+if(index !== -1){
+    fruits.splice(index , 0 , newFruit)
+    console.log(`"${newFruit}" added before "${targetFruit}"`)
+}else{
+    fruits.unshift(targetFruit);
+        console.log(`"${targetFruit}" added at the start of the list`)
+}
+}
+
+addFruitsBefore("apple", "carrot")
+console.log(fruits);
+addFruitsBefore("orange" ,"strawberry")
+console.log(fruits);
+-----------------------------------------------------------------------
+
+/*Task 3: Copy and Modify an Array
+1. Create an array of numbers from 1 to 10.
+2. Use slice to copy the first half of the array (1-5) into a new array.
+3. Add a new number to the copied array using push without affecting the original array.*/
+
+let Number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let HalfNumber = Number.slice(0, 5)
+function halfarray(addnumber) {
+    return HalfNumber.push(addnumber)
+}
+halfarray(65)
+
+console.log(HalfNumber)
+console.log(Number)
+
+-----------------------------------------------------------------------
+// Task 4: Search and Update Based on Condition
+// 1. Create an array of products, including duplicates.
+// 2. If a specific product (e.g., "phone") is found, remove it from the array using splice.
+// 3. If not found, add it to the beginning using unshift.
+
+let products = ["ac ", "tv", "phone", "washingmachine", "trimmer", "phone" , "mobile"];
+const updateProductList = (product) => {
+    const index = products.indexOf(product);
+    if (index !== -1) {
+        products.splice(index, 1)
+        console.log(`"${product}" is found and remove from the list`)
+    } else {
+        products.unshift(product)
+        console.log(`"${product}" is not found and added the products in the list`)
+    }
+}
+
+console.log(products);
+updateProductList("phone")
+console.log(products)
+
+updateProductList("earphone")
+console.log(products)
+
+--------------------------------------------------------------------------
+
+// Task 5: Count Unique Items
+// 1. Create an array of random numbers with some duplicates.
+// 2. Use a loop and includes to create a new array of unique numbers only.
+
+
+let numbers = [12, 4, 5, 9, 74, 15, 4, 9, 5, 77, 12];
+let uniqueNumber = [];
+
+for (let number of numbers){
+    if(!uniqueNumber.includes(number)){
+        uniqueNumber.push(number)
+    }
+}
+
+console.log("original array is :" , numbers)
+console.log("uniqenumber array is :" , uniqueNumber)
+
+------------------------------------------------------------
