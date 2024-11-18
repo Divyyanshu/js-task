@@ -1,4 +1,4 @@
-// Task 8: Identify and Split an Array
+// Task 9: Identify and Split an Array
 // 1. Create an array of scores (both high and low values).
 // 2. Use findIndex to locate the first score over 80.
 // 3. Use slice to separate scores before and after this index.

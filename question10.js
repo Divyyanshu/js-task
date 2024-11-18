@@ -1,4 +1,4 @@
-// Task 9: Extract and Combine Lists
+// Task 10: Extract and Combine Lists
 // 1. Create two arrays of student names.
 // 2. Use slice to get the first three students from each list.
 // 3. Use concat to combine these slices into a new array.

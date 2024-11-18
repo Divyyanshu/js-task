@@ -1,4 +1,4 @@
-/*Task 7: Remove and Check Array Length
+/*Task 8: Remove and Check Array Length
 1. Create an array with several items.
 2. Remove items from the end using pop until the array has only 3 items left.*/
 

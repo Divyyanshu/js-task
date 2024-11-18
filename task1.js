@@ -24,7 +24,8 @@ function addmovie(movie) {
 
 addmovie("spiderman");
 console.log(favMovies)
------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------
 // Task 2: Find and Add Elements Based on Index
 // 1. Create an array of different fruit names.
 // 2. Find the index of a specific fruit (e.g., "apple") using findIndex.
@@ -51,7 +52,7 @@ addFruitsBefore("apple", "carrot")
 console.log(fruits);
 addFruitsBefore("orange" ,"strawberry")
 console.log(fruits);
------------------------------------------------------------------------
+// -----------------------------------------------------------------------
 
 /*Task 3: Copy and Modify an Array
 1. Create an array of numbers from 1 to 10.
@@ -69,7 +70,7 @@ halfarray(65)
 console.log(HalfNumber)
 console.log(Number)
 
------------------------------------------------------------------------
+// -----------------------------------------------------------------------
 // Task 4: Search and Update Based on Condition
 // 1. Create an array of products, including duplicates.
 // 2. If a specific product (e.g., "phone") is found, remove it from the array using splice.
@@ -94,7 +95,7 @@ console.log(products)
 updateProductList("earphone")
 console.log(products)
 
---------------------------------------------------------------------------
+// --------------------------------------------------------------------------
 
 // Task 5: Count Unique Items
 // 1. Create an array of random numbers with some duplicates.
@@ -113,7 +114,7 @@ for (let number of numbers){
 console.log("original array is :" , numbers)
 console.log("uniqenumber array is :" , uniqueNumber)
 
-------------------------------------------------------------
+// -------------------------------------------------------------------------------
 // Task 6: Check and Insert Condition
 // 1. Create an array of cities.
 // 2. If the array doesn't include a certain city (e.g., "New York"), add it at the beginning
@@ -130,8 +131,8 @@ if (!cities.includes("kota")) {
 
 console.log(cities)
 
-----------------------------------------------------
-task 7. 
+// --------------------------------------------------------------------------------
+// task 7. 
 
 
 // You are given an array of numbers representing points scored in a series of games. Write a
@@ -193,7 +194,7 @@ function analyzeScores(scores, threshold) {
   console.log("Modified Array:", result.modifiedArray);
   console.log("Total of Doubled Scores:", result.totalDoubledScores);
   
------------------------------------------------------------------
+// -----------------------------------------------------------------
 
 /*Task 8: Remove and Check Array Length
 1. Create an array with several items.
@@ -207,7 +208,7 @@ while (items.length > 3) {
 console.log(items)
 console.log(`${items.length} is array present after done the operation using pop()`)
 
---------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------
 
 // Task 9: Identify and Split an Array
 // 1. Create an array of scores (both high and low values).
@@ -215,19 +216,19 @@ console.log(`${items.length} is array present after done the operation using pop
 // 3. Use slice to separate scores before and after this index.
 
 
-let scores = [45, 67, 80, 89, 23, 92, 74, 88, 55];
+const Scores = [45, 67, 80, 89, 23, 92, 74, 88, 55];
 
-let firstHighscoreIndex = scores.findIndex(score => score > 80)
+let firstHighscoreIndex = Scores.findIndex(score => score > 80)
 console.log(firstHighscoreIndex)
 
-let highScores = scores.slice(0, firstHighscoreIndex)
+let highScores = Scores.slice(0, firstHighscoreIndex)
 console.log(highScores)
-let lowScores = scores.slice(firstHighscoreIndex)
+let lowScores = Scores.slice(firstHighscoreIndex)
 console.log(lowScores)
 
-console.log(scores)
+console.log(Scores)
 
----------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------
 
 // Task 10: Extract and Combine Lists
 // 1. Create two arrays of student names.
@@ -249,7 +250,7 @@ const newStudentDataConcnat = sliceStudent1.concat(sliceStudent2);
 // its give string data not in array formation dont use this type of add two array use concat() method
 console.log(newStudentDataConcnat);
 
----------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------
 
 // Task 11: Modify Based on Condition
 // 1. Create an array of employee names.
@@ -268,4 +269,4 @@ if (employeName.includes("riya")) {
 }
 console.log(employeName)
 
----------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------
