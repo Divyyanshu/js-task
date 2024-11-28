@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Card</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+      }
+      button{
+        padding: 20px 10px;
+        background-color: skyblue;
+        border-radius: 100%;
+        font-size: small;
+      }
+      .dark {
+      background-color: #000000;
+      color : white
+    }
+      h1 {
+        position: absolute;
+        top: 10px;
+        text-align: center;
+        width: 100%;
+        background-color: rgba(170, 80, 142, 0.363);
+        text-transform: uppercase;
+        padding: 1rem 0;
+      }
+      .card-design {
+        background-color: whitesmoke;
+        width: 250px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 50px;
+        margin-top: 150px;
+      }
+      img {
+        height: 150px;
+        width: 150px;
+        border-radius: 10px;
+        object-fit: cover;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body class="dark">
+    <h1>Country Card <span><Button id="toggle">Toggle</Button></span></h1>
+    <div class="card-design" id="main-card">
+      <!-- <img src="" id="CountryImage"/>
+      <div class="info">
+        <p id="countryName"></p>
+        <p id="capitalName"></p>
+      </div> -->
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
